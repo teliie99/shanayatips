@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHANAYA TIPS </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2351538325596755');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2351538325596755&ev=PageView&noscript=1" alt=""/></noscript>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: radial-gradient(ellipse at 20% 15%, #1a1200 0%, #0f0a00 40%, #060400 100%);
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 90px;
+        }
+
+        /* ── Trust Bar ── */
+
+        .trust-bar {
+            background: rgba(251, 191, 36, 0.08);
+            border-bottom: 1px solid rgba(251, 191, 36, 0.18);
+            padding: 9px 16px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.75);
+            letter-spacing: 0.3px;
+        }
+
+        /* ── Page ── */
+
+        .page {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 28px 18px 32px;
+        }
+
+        /* ── FOMO Pill ── */
+
+        .fomo-wrap {
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .fomo-pill {
+            display: inline-block;
+            background: linear-gradient(90deg, rgba(251, 191, 36, 0.18), rgba(217, 119, 6, 0.22));
+            border: 1px solid rgba(251, 191, 36, 0.35);
+            border-radius: 50px;
+            padding: 7px 18px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #fbbf24;
+            letter-spacing: 0.3px;
+        }
+
+        /* ── Hero ── */
+
+        .hero {
+            text-align: center;
+            margin-bottom: 26px;
+        }
+
+        .shimmer-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+            border-radius: 2px;
+            margin-bottom: 22px;
+            animation: shimmerLine 2.5s ease-in-out infinite;
+        }
+
+        @keyframes shimmerLine {
+            0% {
+                opacity: 0.4
+            }
+            50% {
+                opacity: 1
+            }
+            100% {
+                opacity: 0.4
+            }
+        }
+
+        .avatar-wrap {
+            margin-bottom: 16px;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #b45309, #fbbf24);
+            border: 3px solid rgba(251, 191, 36, 0.4);
+            box-shadow: 0 0 0 5px rgba(251, 191, 36, 0.12), 0 8px 32px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+        }
+
+        .sport-badges {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+        }
+
+        .sport-badge {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.25);
+            border-radius: 20px;
+            padding: 5px 14px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fbbf24;
+            letter-spacing: 0.3px;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 42px;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #fde68a 50%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .hero-value {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        /* Social Proof */
+
+        .proof-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 22px;
+        }
+
+        .proof-faces {
+            display: flex;
+        }
+
+        .proof-faces span {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 2px solid #060400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            background: linear-gradient(135deg, #b45309, #fbbf24);
+            margin-left: -8px;
+        }
+
+        .proof-faces span:first-child {
+            margin-left: 0;
+        }
+
+        .proof-text {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Top CTA */
+
+        .cta-top {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #d97706, #fbbf24);
+            color: #1a0a00;
+            text-decoration: none;
+            padding: 15px 36px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 16px;
+            box-shadow: 0 8px 30px rgba(217, 119, 6, 0.45);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            margin-bottom: 6px;
+            letter-spacing: 0.3px;
+        }
+
+        .cta-top::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: btnShine 3s ease-in-out infinite;
+        }
+
+        @keyframes btnShine {
+            0% {
+                left: -100%
+            }
+            100% {
+                left: 100%
+            }
+        }
+
+        .cta-top:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(217, 119, 6, 0.6);
+        }
+
+        .cta-top svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .seats-note {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 4px;
+        }
+
+        .blink-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #ff4444;
+            animation: blink 1.2s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1
+            }
+            50% {
+                opacity: 0.2
+            }
+        }
+
+        /* Divider */
+
+        .section-divider {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 28px 0;
+            color: rgba(255, 255, 255, 0.25);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .section-divider::before,
+        .section-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.2), transparent);
+        }
+
+        /* Identity Card */
+
+        .identity-card {
+            background: rgba(251, 191, 36, 0.05);
+            border: 1px solid rgba(251, 191, 36, 0.15);
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .identity-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .identity-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            background: linear-gradient(135deg, #fff, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .identity-sub {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.5;
+        }
+
+        /* Stats Grid */
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .stat-box {
+            background: rgba(251, 191, 36, 0.07);
+            border: 1px solid rgba(251, 191, 36, 0.15);
+            border-radius: 14px;
+            padding: 14px 8px;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 28px;
+            background: linear-gradient(135deg, #fff, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        /* Benefits */
+
+        .benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: rgba(251, 191, 36, 0.05);
+            border: 1px solid rgba(251, 191, 36, 0.12);
+            border-radius: 14px;
+            padding: 14px 16px;
+        }
+
+        .benefit-icon {
+            font-size: 22px;
+            flex-shrink: 0;
+            width: 30px;
+            text-align: center;
+            padding-top: 2px;
+        }
+
+        .benefit-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+
+        .benefit-desc {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.5;
+        }
+
+        /* Urgency Banner */
+
+        .urgency {
+            background: linear-gradient(135deg, rgba(180, 83, 9, 0.18), rgba(100, 50, 0, 0.22));
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 14px;
+            padding: 14px 18px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .urgency p {
+            font-size: 13px;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+
+        /* Disclaimer */
+
+        .disclaimer-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+        }
+
+        .disclaimer-title {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: rgba(255, 255, 255, 0.35);
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.3);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+
+        .footer {
+            text-align: center;
+            padding: 4px 0 8px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 11px;
+            color: rgba(251, 191, 36, 0.5);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #fbbf24;
+        }
+
+        .footer-copy {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.18);
+            line-height: 1.6;
+        }
+
+        /* ── Sticky Bottom CTA ── */
+
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(6, 4, 0, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(251, 191, 36, 0.18);
+            padding: 12px 20px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transform: translateY(0);
+        }
+
+        .sticky-seats {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.45);
+            white-space: nowrap;
+        }
+
+        a#cta-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #d97706, #fbbf24);
+            color: #1a0a00;
+            text-decoration: none;
+            padding: 13px 28px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 15px;
+            box-shadow: 0 6px 22px rgba(217, 119, 6, 0.4);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s ease;
+            flex: 1;
+            max-width: 320px;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        a#cta-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: btnShine 3s ease-in-out infinite;
+        }
+
+        a#cta-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        a#cta-btn svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        /* ── Policy Pages ── */
+
+        .policy-page {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: radial-gradient(ellipse at 20% 15%, #1a1200 0%, #0f0a00 40%, #060400 100%);
+            overflow-y: auto;
+            padding: 40px 20px 80px;
+        }
+
+        .policy-page.active {
+            display: block;
+        }
+
+        .policy-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .policy-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #fbbf24;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 24px;
+            background: none;
+            border: none;
+            padding: 0;
+            letter-spacing: 0.3px;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .policy-back:hover {
+            opacity: 0.8;
+        }
+
+        .policy-content h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            background: linear-gradient(135deg, #fff, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .policy-content .policy-date {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 28px;
+        }
+
+        .policy-content h2 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #fbbf24;
+            margin: 24px 0 8px;
+        }
+
+        .policy-content p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .policy-content ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .policy-content li {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.8;
+            margin-bottom: 6px;
+        }
+
+        .policy-content a {
+            color: #fbbf24;
+            text-decoration: none;
+        }
+
+        .policy-content a:hover {
+            text-decoration: underline;
+        }
+
+        @media(max-width:480px) {
+            h1 {
+                font-size: 34px;
+            }
+            .page {
+                padding: 20px 14px 28px;
+            }
+            .cta-top {
+                padding: 13px 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        🎾 Daily Series · BBL · WBBL — Statistical Analysis & Research | 100K+ Members
+    </div>
+
+    <!-- Main Page -->
+    <div class="page" id="main-page">
+
+        <!-- FOMO Pill -->
+        <div class="fomo-wrap">
+            <span class="fomo-pill">⚡ Limited Seats — Join Now</span>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="shimmer-line"></div>
+            <div class="avatar-wrap">
+                <div class="avatar">🏏</div>
+            </div>
+
+            <div class="sport-badges">
+                <span class="sport-badge">🏆 International League </span>
+                <span class="sport-badge">🌍 Women Big Bash League</span>
+                <span class="sport-badge">👑 Big Bash League</span>
+            </div>
+
+            <h1>SHANAYA TIPS </h1>
+
+            <p class="hero-value">India's most trusted Cricket statistical analysis channel — player form data, surface stats, head-to-head records & match research delivered before every game.</p>
+
+            <!-- Social Proof -->
+            <div class="proof-row">
+                <div class="proof-faces">
+                    <span>👤</span><span>👤</span><span>👤</span><span>👤</span><span>👤</span>
+                </div>
+                <div class="proof-text">1,00,000+ members trust us</div>
+            </div>
+
+            <!-- Top CTA -->
+            <a href="https://t.me/+8DTiSVSprsQ3OTc1" class="cta-top" id="cta-btn-top" data-tgtrack-cta="1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+      Join Shanaya Tips — FREE
+    </a>
+            <div class="seats-note">
+                <span class="blink-dot"></span> Limited seats · Hurry up
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="section-divider">Why 1 Lakh+ Trust Us</div>
+
+        <!-- Identity Card -->
+        <div class="identity-card">
+            <div class="identity-icon">🏏</div>
+            <div class="identity-name">SHANAYA TIP</div>
+            <div class="identity-sub">Expert CRICKET Analyst · ILT WBBL BBL Specialist · India's Trusted Statistical Research Channel</div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-num">100K+</div>
+                <div class="stat-label">Members</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">ATP+</div>
+                <div class="stat-label">All Tours</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">Daily</div>
+                <div class="stat-label">Analysis</div>
+            </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="benefits">
+            <div class="benefit">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-body">
+                    <div class="benefit-title">Surface & Conditions Research</div>
+                    <div class="benefit-desc">Pre-match surface data, court speed analysis & weather impact — clay, grass, hard court sab cover. Every tournament, every round.</div>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">📊</div>
+                <div class="benefit-body">
+                    <div class="benefit-title">Player Form & H2H Statistical Data</div>
+                    <div class="benefit-desc">Player recent form stats, serve & return percentages, head-to-head historical records — data-driven research before every match.</div>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🏆</div>
+                <div class="benefit-body">
+                    <div class="benefit-title"> ILT WBBL BBL Coverage</div>
+                    <div class="benefit-desc">Wimbledon, French Open, US Open, Australian Open — all major tournaments covered with complete statistical research.</div>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🔒</div>
+                <div class="benefit-body">
+                    <div class="benefit-title">100% Genuine Research</div>
+                    <div class="benefit-desc">No paid promos, no false claims — only honest data-driven expert analysis based on historical statistics.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Urgency Banner -->
+        <div class="urgency">
+            <p>🔥 Next match analysis dropping soon — Join before it's full</p>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer-box">
+            <div class="disclaimer-title">⚠ Important Disclaimer</div>
+            <p class="disclaimer">Shnaya tips Cricket is a crcicket statistical analysis and research platform for educational and informational purposes only. All content — including match analysis, surface reports, player form data, and historical statistics — is based on publicly
+                available data and expert research. This channel is not affiliated with any betting or gambling platform. Please be responsible.</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#" onclick="showPolicy('privacy');return false;">Privacy Policy</a>
+                <a href="#" onclick="showPolicy('terms');return false;">Terms of Service</a>
+                <a href="#" onclick="showPolicy('contact');return false;">Contact Us</a>
+            </div>
+            <div class="footer-copy">
+                © 2024 Shanaya Tips Cricket. All rights reserved.<br> Statistical analysis for educational purposes only. Not affiliated with any betting platform.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sticky Bottom CTA — always visible -->
+    <div class="sticky-cta">
+        <div class="sticky-seats">
+            <span class="blink-dot"></span> Limited
+        </div>
+        <a href="https://t.me/+8DTiSVSprsQ3OTc1" id="cta-btn" data-tgtrack-cta="1" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+    Join SHANAYA TIPS — FREE
+  </a>
+    </div>
+
+    <!-- Privacy Policy Page -->
+    <div class="policy-page" id="page-privacy">
+        <div class="policy-content">
+            <button class="policy-back" onclick="hidePolicy()">← Back</button>
+            <h1>Privacy Policy</h1>
+            <p class="policy-date">Last updated: October 2024</p>
+
+            <h2>1. Information We Collect</h2>
+            <p>When you visit this page, we may collect basic analytics data such as page views and click events through our advertising partners (Meta Pixel). We do not collect any personally identifiable information directly through this website.</p>
+
+            <h2>2. How We Use Information</h2>
+            <p>The information collected is used solely for measuring the effectiveness of our advertisements, improving our content and user experience, and understanding our audience demographics in aggregate form.</p>
+
+            <h2>3. Third-Party Services</h2>
+            <p>This page uses Meta Pixel (Facebook Pixel) for advertisement tracking. Meta's data collection and usage is governed by <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta's Privacy Policy</a>.</p>
+
+            <h2>4. Cookies</h2>
+            <p>This website may use cookies placed by third-party services like Meta Pixel. You can control cookie settings through your browser preferences.</p>
+
+            <h2>5. Telegram</h2>
+            <p>If you choose to join our Telegram channel, you will be redirected to Telegram's platform. Your use of Telegram is governed by <a href="https://telegram.org/privacy" target="_blank">Telegram's Privacy Policy</a>.</p>
+
+            <h2>6. Contact</h2>
+            <p>For any privacy-related queries, please reach out via our <a href="https://t.me/Shivkalyaanbot?start=6586befad321523e64b52f4aff3e40af" target="_blank">Telegram channel</a>.</p>
+        </div>
+    </div>
+
+    <!-- Terms of Service Page -->
+    <div class="policy-page" id="page-terms">
+        <div class="policy-content">
+            <button class="policy-back" onclick="hidePolicy()">← Back</button>
+            <h1>Terms of Service</h1>
+            <p class="policy-date">Last updated: October 2024</p>
+
+            <h2>1. Educational Purpose Only</h2>
+            <p>Shanaya tips is a crcicket statistical analysis and research platform intended for <strong>educational and informational purposes only</strong>. All content shared is strictly for entertainment and educational use.</p>
+
+            <h2>2. Not Financial or Betting Advice</h2>
+            <p>Nothing published on this platform or in our Telegram channel constitutes financial advice, betting advice, or any form of recommendation to engage in gambling or wagering activities. We are not affiliated with, endorsed by, or connected to
+                any betting or gambling platform.</p>
+
+            <h2>3. No Guarantee of Accuracy</h2>
+            <p>While we strive to provide accurate statistical analysis based on publicly available data, we make no guarantees regarding the accuracy or reliability of any information shared. Cricket is an unpredictable sport and past statistical trends
+                do not guarantee future outcomes.</p>
+
+            <h2>4. User Responsibility</h2>
+            <p>By accessing this page or joining our Telegram channel, you agree that you are using the information for personal knowledge and entertainment only, and you take full responsibility for any decisions made based on information from this platform.</p>
+
+            <h2>5. Contact</h2>
+            <p>For any queries, please reach out via our <a href="https://t.me/Shivkalyaanbot?start=6586befad321523e64b52f4aff3e40af" target="_blank">Telegram channel</a>.</p>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div class="policy-page" id="page-contact">
+        <div class="policy-content">
+            <button class="policy-back" onclick="hidePolicy()">← Back</button>
+            <h1>Contact Us</h1>
+            <p class="policy-date">We'd love to hear from you</p>
+
+            <h2>Telegram Channel</h2>
+            <p>Cricket analysis, research updates aur queries ke liye humara official Telegram channel join karo:</p>
+            <p><a href="https://t.me/+8DTiSVSprsQ3OTc1" target="_blank">Join Shanaya Tips Crciket →</a></p>
+
+            <h2>About Us</h2>
+            <p>Shiv Kalyan Tennis is a trusted tennis statistical analysis community. We provide data-driven tennis research based on historical data, surface reports, player form stats, and head-to-head records — covering BBL, WBBL, ILT and SA20
+                events.</p>
+        </div>
+    </div>
+
+    <!-- Policy navigation -->
+    <script>
+        function showPolicy(type) {
+            document.querySelectorAll('.policy-page').forEach(function(p) {
+                p.classList.remove('active');
+            });
+            var pg = document.getElementById('page-' + type);
+            if (pg) {
+                pg.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+        }
+
+        function hidePolicy() {
+            document.querySelectorAll('.policy-page').forEach(function(p) {
+                p.classList.remove('active');
+            });
+        }
+    </script>
+
+    <!-- TGTrack -->
+    <script src="https://tgtrack.io/api/events/tracker.js?key=6586befad321523e64b52f4aff3e40af"></script>
+    <script>
+        document.getElementById('cta-btn').setAttribute('data-tgtrack-cta', '1');
+        document.getElementById('cta-btn-top').setAttribute('data-tgtrack-cta', '1');
+    </script>
+</body>
+
+</html>
